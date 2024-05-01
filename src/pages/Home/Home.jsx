@@ -6,11 +6,11 @@ import { Sidebar } from "../../components/sidebar/sidebar";
 
 
 
-export function Home() {
+export function Home({sidebar}) {
     return (
         <div>
 
-          <Sidebar/>
+          <Sidebar sidebar={sidebar}/>
           
 
 

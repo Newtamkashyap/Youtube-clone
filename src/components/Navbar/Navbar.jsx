@@ -10,12 +10,13 @@ import search_icon from '../../assets/search.png';
 import notification_icon from '../../assets/notification.png';
 
 
-export function Navbar() {
+export function Navbar({setSidebar}) {
+
     return (
         <nav className="flex-div">
             <div className="nav-left flex-div">
-                <img className='menu_icon' src={menu_icon} alt='not visible'></img>
-                <img className='logo' src={logo} alt='not visible'></img>
+                <img className='menu_icon' onClick={()=>setSidebar(prev=>prev===false?true:false)} src={menu_icon}  />
+                <img className='logo' src={logo} alt='not visible'/>
             </div>
 
 

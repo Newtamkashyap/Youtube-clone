@@ -16,10 +16,10 @@ import tom from '../../assets/tom.png';
 import megan from '../../assets/megan.png';
 import cameron from '../../assets/cameron.png';
 
-export function Sidebar() {
+export function Sidebar({ sidebar }) {
     return (
-        <div className='sidebar'>
-            <div className='sortcut-links'>
+        <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
+            <div className='shortcut-links'>
                 <div className='side-link'>
                     <img src={home} /><p>Home</p>
                 </div>
@@ -55,27 +55,33 @@ export function Sidebar() {
                 <div className='side-link'>
                     <img src={news} /><p>News</p>
                 </div>
-                <hr/>
-                {/* <div className='side-link'>
-                    <img src={home} /><p>Home</p>
+                <hr />
+
+                <div className='subscribed-list '>
+                    <h3>Subscribed</h3>
+
+                    <div className='side-link'>
+                        <img src={jack} /><p>PewDiePie</p>
+                    </div>
+
+
+                    <div className='side-link'>
+                        <img src={simon} /><p>MyBeast</p>
+                    </div>
+
+                    <div className='side-link'>
+                        <img src={tom} /><p>Justin Bieber</p>
+                    </div>
+
+                    <div className='side-link'>
+                        <img src={megan} /><p>5-Minutes Crafts</p>
+                    </div>
+
+                    <div className='side-link'>
+                        <img src={cameron} /><p>Nas Daily</p>
+                    </div>
                 </div>
 
-                <div className='side-link'>
-                    <img src={home} /><p>Home</p>
-                </div>
-
-                <div className='side-link'>
-                    <img src={home} /><p>Home</p>
-                </div>
-
-                <div className='side-link'>
-                    <img src={home} /><p>Home</p>
-                </div>
-
-                <div className='side-link'>
-                    <img src={home} /><p>Home</p>
-                </div>
-                */}
             </div>
         </div>
     )
