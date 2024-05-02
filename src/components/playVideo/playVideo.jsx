@@ -179,6 +179,217 @@ const PlayVideo = () => {
                         </div>
                     </div>
                 </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+
+                 <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} />
+                    <div>
+                        <h3>Jack Nicholson<span>1 day ago</span></h3>
+                        <p>A global computer network providing a varity of information and communication
+                             </p>
+                        <div className="comment-action">
+                            <img src={like} />
+                            <span>244</span>
+                            <img src={dislike} />
+                        </div>
+                    </div>
+                </div>
+                
+
 
             </div>
         </div>
