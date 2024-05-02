@@ -64,6 +64,7 @@ export function Recommended() {
             </div>
             <div className='side-video-list'>
                     <img src={thumbnail7} />
+                    
                     <div className="video-info">
                         <h4>Great channel that help you to be a web developer</h4>
                         <p>GreatStack</p>
