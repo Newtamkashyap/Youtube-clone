@@ -9,7 +9,6 @@ import thumbnail6 from '../../assets/thumbnail6.png'
 import thumbnail7 from '../../assets/thumbnail7.png'
 
 
-
 export function Recommended() {
     return (
         <div className="recommended">

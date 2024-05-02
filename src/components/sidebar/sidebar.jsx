@@ -19,7 +19,7 @@ import cameron from '../../assets/cameron.png';
 export function Sidebar({ sidebar,category,setCategory }) {
     // it will change from API when we click on sidebar 
     return (
-        <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
+        <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
             <div className='shortcut-links'>
                 <div className={`side-link ${category===0?"active":""}`} onClick={()=>setCategory(0)}>
                     <img src={home} /><p>Home</p>
