@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Recommended.css';
 import thumbnail1 from '../../assets/thumbnail1.png'
 import thumbnail2 from '../../assets/thumbnail2.png'
@@ -7,244 +7,39 @@ import thumbnail4 from '../../assets/thumbnail4.png'
 import thumbnail5 from '../../assets/thumbnail5.png'
 import thumbnail6 from '../../assets/thumbnail6.png'
 import thumbnail7 from '../../assets/thumbnail7.png'
+import { API_Key, value_converter } from "../../data";
+import { Link } from "react-router-dom";
 
 
-export function Recommended() {
+export function Recommended({ categoryId }) {
+    const [apiData, setApiData] = useState([]);
+
+    const fetchData = async () => {
+        const relatedVideo_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${categoryId}&key=${API_Key} `;
+        await fetch(relatedVideo_url).then(res => res.json()).then(data => setApiData(data.items));
+    }
+
+    useEffect(() => {
+        //useeffect is using for calling the above function
+        fetchData();
+    }, [])
     return (
         <div className="recommended">
-            <div className='side-video-list'>
-                <img src={thumbnail1} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail2} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail3} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail4} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail5} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail6} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-               
-            </div>
-            <div className='side-video-list'>
-                    <img src={thumbnail7} />
-                    
-                    <div className="video-info">
-                        <h4>Great channel that help you to be a web developer</h4>
-                        <p>GreatStack</p>
-                        <p>199 Views</p>
-                    </div>
-                </div>
-                <div className='side-video-list'>
-                <img src={thumbnail1} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail2} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail3} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail4} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail5} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail6} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-               
-            </div>
-            <div className='side-video-list'>
-                    <img src={thumbnail7} />
-                    
-                    <div className="video-info">
-                        <h4>Great channel that help you to be a web developer</h4>
-                        <p>GreatStack</p>
-                        <p>199 Views</p>
-                    </div>
-                </div>
-                <div className='side-video-list'>
-                <img src={thumbnail1} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail2} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail3} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail4} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail5} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail6} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-               
-            </div>
-            <div className='side-video-list'>
-                    <img src={thumbnail7} />
-                    
-                    <div className="video-info">
-                        <h4>Great channel that help you to be a web developer</h4>
-                        <p>GreatStack</p>
-                        <p>199 Views</p>
-                    </div>
-                </div>
+            {apiData.map((item, index) => {
+                return (
+                    <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className='side-video-list'>
+                        <img src={item.snippet.thumbnails.medium.url} />
+                        <div className="video-info">
+                            <h4>{item.snippet.title}</h4>
+                            <p>{item.snippet.channelTitle}</p>
+                            <p>{value_converter(item.statistics.viewCount)}views</p>
+                        </div>
+                    </Link>
 
-                <div className='side-video-list'>
-                <img src={thumbnail1} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail2} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail3} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail4} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail5} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-            </div>
-            <div className='side-video-list'>
-                <img src={thumbnail6} />
-                <div className="video-info">
-                    <h4>Great channel that help you to be a web developer</h4>
-                    <p>GreatStack</p>
-                    <p>199 Views</p>
-                </div>
-               
-            </div>
-            <div className='side-video-list'>
-                    <img src={thumbnail7} />
-                    
-                    <div className="video-info">
-                        <h4>Great channel that help you to be a web developer</h4>
-                        <p>GreatStack</p>
-                        <p>199 Views</p>
-                    </div>
-                </div>
+                )
+
+            })}
+
 
         </div>
     )

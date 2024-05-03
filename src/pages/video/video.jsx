@@ -11,7 +11,7 @@ export function Video(){
             <PlayVideo videoId={videoId}/>
             {/* after that here Recommended component are mounting */}
 
-            <Recommended/>
+            <Recommended categoryId={categoryId}/>
 
         </div>
     )
